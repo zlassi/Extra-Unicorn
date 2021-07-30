@@ -1,0 +1,280 @@
+:root {
+  --black: #181818;
+  --white: #ffffff;
+  --gray: #eeeeee;
+  --gray-light: #fbfbfb;
+  --font-body: "PT Sans", sans-serif;
+  --font-title: "Libre Baskerville", serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Libre Baskerville", serif;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+}
+main {
+  background-color: var(--gray-light);
+}
+.contenaire {
+  width: 85%;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-top: 1em;
+}
+.menu-berger {
+  display: block;
+}
+.menu-berger img {
+  width: 40%;
+}
+.menu-liste {
+  display: none;
+}
+.titel h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 3em;
+}
+.titel p {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.unicorn img {
+  width: 16em;
+  margin-top: 4em;
+  margin-bottom: 8em;
+}
+
+.cube img {
+  width: 20em;
+  border-radius: 0.3em;
+  margin-left: 0;
+}
+.web {
+  display: none;
+}
+.etoile .web {
+  display: none;
+}
+.cube p {
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+.etoile img {
+  width: 20em;
+  border-radius: 0.3em;
+  display: block;
+}
+.etoile p {
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+.etoile a {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+  padding: 1em 7.5em;
+  border: solid 0.1em var(--black);
+  border-radius: 0.1em;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+.etoile a:hover {
+  background-color: #8dc1fd;
+  border: rgb(197, 197, 197);
+  transition: 0.5s;
+}
+.news-paper {
+  background-color: var(--gray);
+  margin-top: 5em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+.unicorn-read img {
+  width: 15em;
+  margin-top: 1em;
+  margin-left: 1.2em;
+}
+.good h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2em;
+  text-align: left;
+  margin-top: 1em;
+  margin-left: 0.7em;
+}
+.good span {
+  display: block;
+}
+.good a {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+  background-color: var(--black);
+  padding: 0.9em 6em;
+  border-radius: 0.2em;
+  color: var(--white);
+  margin-left: 1.7em;
+}
+.reseaux {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3em;
+  margin-bottom: 3em;
+  grid-gap: 1em;
+  width: 80%;
+  margin-left: 2.5em;
+}
+.reseaux > div {
+  border: 0.01em solid rgb(0, 0, 0, 0.3);
+  padding: 1em;
+  border-radius: 0.2em;
+}
+.reseaux div a svg {
+  color: var(--black);
+  margin-left: 1em;
+}
+/* responsive */
+
+@media (min-width: 1200px) {
+  .menu-berger {
+    display: none;
+  }
+  .menu-liste {
+    display: block;
+  }
+  .menu-liste ul {
+    display: flex;
+    gap: 1em;
+  }
+  .menu-liste ul a {
+    text-decoration: none;
+    color: var(--black);
+  }
+  .menu-liste ul a:hover {
+    color: red;
+    transition: 0.5s;
+  }
+  .menu-liste ul li {
+    list-style: none;
+    font-size: 0.7em;
+    font-weight: normal;
+  }
+  .titel h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 1em;
+    width: 80%;
+    margin-left: 2em;
+    margin-bottom: 0;
+  }
+  .titel p {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .unicorn img {
+    width: 25em;
+    margin-top: 10em;
+    margin-bottom: 8em;
+    margin-left: 22em;
+  }
+  .cube {
+    position: relative;
+  }
+  .cube p {
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+    width: 17em;
+    line-height: 1.627em;
+  }
+  .cube img {
+    display: none;
+  }
+  .cube .web {
+    display: block;
+    width: 85vw;
+  }
+  .etoile img {
+    display: none;
+  }
+  .etoile .web {
+    display: block;
+    width: 85vw;
+    margin-top: 3em;
+  }
+  .etoile {
+    position: relative;
+  }
+  .etoile p {
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+    width: 15em;
+    line-height: 1.627em;
+  }
+  .etoile a {
+    display: none;
+  }
+  .news-paper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .good h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 4em;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .unicorn-read img {
+    width: 28em;
+    margin-top: 1em;
+    margin-right: 3em;
+    margin-bottom: 1.5em;
+  }
+  footer {
+    margin-right: 0;
+    margin-left: 40em;
+  }
+  .reseaux {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .reseaux > div {
+    border: none;
+    padding: 0;
+    border-radius: none;
+  }
+
+  .good a {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: none;
+    background-color: var(--black);
+    padding: 0.9em 3em;
+    border-radius: 0.2em;
+    color: var(--white);
+    margin-left: 5em;
+  }
+}
