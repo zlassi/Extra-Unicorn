@@ -18,7 +18,7 @@ Couleurs :
 Police de caractères :
 
 ```text
-"Libre Baskerville" pour lms balises headings
+"Libre Baskerville" pour les balises headings
 "PT Sans" pour le document
 ```
 
