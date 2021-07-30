@@ -27,6 +27,12 @@ Icônes :
 Toutes les icônes se trouvent sur le site de Bootstrap :  
 https://icons.getbootstrap.com/
 
+Validité du code :
+
+Pensez à vérifier votre code avec W3C : https://validator.w3.org/
+
+Une fois l'intégration terminée, push votre travail, activez GitHub Page et vérifiez la rapidité du site avec Google Insight : https://developers.google.com/speed/pagespeed/insights/?hl=fr
+
 ## Notes
 
 Aucune animation ou transition.  
